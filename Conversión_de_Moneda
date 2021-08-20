@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+	float PrecioActual;
+	float Dolares;	
+	printf("Digite el precio actual del dolar a pesos:");
+	scanf("%f",&PrecioActual);
+    
+	printf("Ingrese la cantidad en Dolares:");
+	scanf("%f",&Dolares);
+	
+	float Pesos= (Dolares*PrecioActual);
+	printf("Dolar es equivalente a:%f pesos",Pesos);
+	
+	
+	return 0;
+}
