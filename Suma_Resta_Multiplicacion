@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+	int a,p;
+	printf("Indica el numero base: \n");
+	scanf("%d",&a);
+	p=pow(a,2);
+	printf("El valor %d elevado al cuadrado es %d",a,p);
+	
+	
+	
+	return 0;
+}
