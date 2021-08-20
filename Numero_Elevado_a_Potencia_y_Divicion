@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+	int a,p;
+	int b;
+
+	printf("Indica el numero base: \n");
+	scanf("%d",&a);
+	p=pow(a,2);
+	printf("El valor %d elevado al cuadrado es %d",a,p);
+	
+	
+	
+	printf("\nIndica un valor para dividir:\n");
+	scanf("%d",&b);
+	
+	int div=(p/b);
+	
+	printf("El valor de la divicion es:%i\n",div);
+	
+
+
+	
+	return 0;
+}
