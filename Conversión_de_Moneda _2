@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void){
+	int MXN,c;
+	float conv;
+	printf("Indique una cantidad en pesos: \n");
+	scanf("%d",&MXN);
+	
+	printf("Indique los pesos a convertir: \n 1)Dolar \n 2)Yen \n 3)Euro \n 4)Bitcoin \n 5)Loti \n ");
+	scanf("%d",&c);
+
+	conv=0;
+	switch(c)
+	{
+		case 1:
+			conv=MXN * 0.049; //DOLARES
+		break;
+	        
+		case 2:
+			conv=MXN * 5.41; //YEN
+		break;
+		
+		case 3:
+			conv=MXN * 0.042; //EURO
+		break;
+		
+		case 4:
+			conv=MXN * 0.0000010; //BITCOIN
+		break;	 
+		
+		case 5:
+			conv=MXN * 0.73; //LOTI
+		break;
+		
+		default:
+			printf("El numero seleccionado no se encuentra en la base de conversion XD");
+		
+	}
+	
+	printf("La conversion seleccionada es: %f",conv);
+	
+	
+	
+	return 0;
+}
