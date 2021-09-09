@@ -1,0 +1,18 @@
+#include<stdio.h>;
+#include<math.h>
+int main(){
+	float magnitud,Volumen,potencia=3;
+	printf("indique la magnitud de uno de los lados de la base:");
+	scanf("%f",&magnitud);
+	
+	Volumen=pow(magnitud,potencia);
+	
+	printf("El vomumen del cubo es:%.2f m cubicos",Volumen);
+	
+	
+	
+	
+	
+	
+	return 0;
+}
