@@ -1,0 +1,33 @@
+//MIGUEL ANTONIO CERON HERNANDEZ
+
+#include <stdio.h>
+
+int main(void){
+	
+	
+	float X;
+	printf("Magnitud:");
+	scanf("%f",&X);
+	
+		if (X<3.5){
+			printf("Imperceptible, sin problema\n");
+		}
+		if (X>3.5 && X<5.4){
+			printf("Sin problemas, avisar \n");
+		}
+		if (X>5.5 && X<6.0){
+			printf("Emitir alerta, desalojar \n");
+		}
+		if (X>6.1 && X<6.9){
+			printf("Emitir alerta, enviar equipos de apoyo \n");
+		}
+		if (X>7 && X<7.9){
+			printf("Emitir alerta, enviar equipos de rescate \n");
+		}
+		if (X>8){
+			printf("Emergencia nacional, solicitar apoyo externo \n");
+		}
+		
+			
+	return 0;
+}
