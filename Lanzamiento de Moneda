@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main (){
+	
+	int moneda;
+	int cantidad;
+	char salir= 0;
+	while(salir!='s'&&salir!='S'){
+		
+	printf("\nindique la cantidad de juego:");
+	scanf("%i",&cantidad);
+	
+	moneda=rand()%2;
+	
+    if(moneda){
+    	
+	
+		printf("(SOL)Has ganado el doble: %i",cantidad*2);
+	}
+	else{
+		printf(": %i",cantidad);
+		scanf("%c",&salir);
+	
+}
+	
+}
+
+	
+	return 0;
+}
