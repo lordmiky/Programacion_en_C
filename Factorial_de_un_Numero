@@ -1,7 +1,3 @@
-//MIGUEL ANTONIO CERON HERNANDEZ
-//PROGRAMACION EN C (FACTORIAL DE UN NUMERO)
-//22/09/2021
-
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
