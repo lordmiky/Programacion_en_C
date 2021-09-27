@@ -1,0 +1,28 @@
+//MIGUEL ANTONIO CERON HERNANDEZ
+//PROGRAMACION EN C (FACTORIAL DE UN NUMERO)
+//22/09/2021
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int n=0,i,fact=1,opc;
+	
+	
+	while (opc=1){
+	
+	int n=0,fact=1;
+	printf("Digite un numero:");
+	scanf("%i",&n );		
+	
+	for(i=1;i<=n;i++){
+		fact*=i;
+	}
+	printf("El factorial de %i es %i\n",n,fact);
+	
+	printf("\nDesea hacer el calculo de nuevo? \n1(si)\n2(no)\n");
+	scanf("%i",&opc);
+	
+	}
+
+return 0;
+}
