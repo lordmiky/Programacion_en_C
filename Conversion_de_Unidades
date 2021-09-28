@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int n,opcion,bin[999];
+	int i=0;
+	int decimal;
+	char hexa[8];
+	char hex[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+	int oct=0,res=0,a=0,b=1;
+	
+	printf("Elija la conversion que desea realizar");
+	printf("\n1. Decimal a Binario");
+	printf("\n2. Decimal a Hexadecimal");
+	printf("\n3. Decimal a Octal");
+	printf("\nOpcion:");
+	scanf("%i",&opcion);
+	
+	switch(opcion){
+		
+		case 1:{
+	printf("Ingrese un numero decimal:");
+	scanf("%i",&n);
+	
+	while(n !=0)
+	{bin[i] = n % 2;
+	n= n / 2;
+	i++;
+	}
+	i--;
+	printf("Binario:");
+	while(i>=0)
+	{printf("%i",bin[i]);
+	i--;
+	}
+		
+		
+	break;}
+	
+	   case 2:{
+	printf("Escribe un numero en decimal\n");
+	scanf("%d",&decimal);
+	int i=0;
+	while(decimal>=16){
+		hexa[i]=hex[decimal%16];
+		decimal=decimal/16;
+		i++;
+	}
+	hexa[i]=hex[decimal];
+	printf("El numero hexadecimal es:\n");
+	int j=0;
+	for(j=i;j>=0;j--){
+		printf("%c",hexa[j]);
+	}
+	
+    }
+		break;
+	
+	case 3:{
+		printf("Digite el numero decimal:\n");
+		scanf("%i",&a);
+		while(a!=0){
+			res=a%8;
+			oct=res*b+oct;
+			b=b*10;
+			a=a/8;
+		}
+		printf("El numero octal es:\n%i",oct);
+		
+		
+		
+		break;
+	}
+	
+
+}
+		
+	return 0;
+}
