@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int a=3;
+	int b=3;
+	int matriz[3][3],i,j,vector[3]={0,0,0};
+	int suma1,suma2;
+
+	for(i=0;i<a;i++){
+		for(j=0;j<b;j++){
+		printf("Indica el valor de la posicion %d,%d:",i,j);
+		scanf("%d",&matriz[i][j]);		
+    	}	
+	}
+	
+	for(i=0;i<a;i++){
+		for(j=0;j<b;j++){
+		printf("%d \t",matriz[i][j]);
+	    }
+	printf("\n\n");
+    }
+	printf("Los valores obtenidos de la suma de las filas son:\n\n");
+	for(i=0;i<a;i++){		
+		for(j=0;j<b;j++){
+		vector[i]=vector[i]+matriz[i][j];
+	    }
+	    printf("%d\n",vector[i]);
+	
+    }
+   printf("Los valores obtenidos de la suma de las columnas son:\n\n");
+    for(j=0;j<a;j++){		
+		for(i=0;i<b;i++){
+		suma2=suma2+matriz[i][j];
+	    }
+	    printf("%d\n",suma2);
+    }
+return 0;
+}
