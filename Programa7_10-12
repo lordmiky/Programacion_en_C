@@ -1,0 +1,21 @@
+#include <stdio.h>      
+#include <time.h> 
+ 
+int main()
+{
+    struct tm strtime;
+    time_t timeoftheday;
+ 
+    strtime.tm_year = 2008-1900;
+    strtime.tm_mon = 1;
+    strtime.tm_mday = 4;
+    strtime.tm_hour = 02;
+    strtime.tm_min = 30;
+    strtime.tm_sec = 38;
+    strtime.tm_isdst = 0;
+ 
+    timeoftheday = mktime(&strtime);
+    printf(ctime(&timeoftheday));
+ 
+    return 0;
+        }
